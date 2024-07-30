@@ -1,3 +1,34 @@
+# Get the weather
+
+This project requires Node (>20.10.0) and NPM to setup and run.
+
+## Instructions
+
+1. Clone the repo locally using Git
+2. Install necessary dependencies
+
+```bash
+npm i
+```
+
+3. Copy or rename `.env.example` to `.env` and get the API Key from the instructor working with you
+4. Starting in `src/pages/index.tsx` and `src/components/weather.tsx` fetch data from the [OpenWeather API](https://openweathermap.org/api) and display the current temperature for the searched latitude and longitude
+5. Time permitting, use the installed `weather-icons-react` to display the current weather pictographically
+
+## Notes
+
+- If you don't know what Latitude/Longitude combination to use, the T-CETRA Office is (40.115280, -83.151760)
+- [Open Weather API Docs](https://openweathermap.org/api/one-call-3)
+- [React Weather Icons docs](https://najens.github.io/weather-icons-react/)
+- This project uses [TailwindCSS](https://tailwindcss.com/docs/installation) and [DaisyUI](https://daisyui.com/docs) for easy styling, you can refer to their docs for more styling
+- This project uses [NextJS](https://nextjs.org/docs) as the meta-framework and has SSR by default, the `weather.tsx` file is setup to be included in the client bundle.
+- It is up to the user on how they want to fetch the data, but some options would be the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [Axios](https://axios-http.com/docs/intro), [TanStack Query](https://tanstack.com/query/latest/docs/framework/react/overview), or [RTKQuery](https://redux-toolkit.js.org/rtk-query/overview)
+- The Open Weather API response can be large, so I have created a TypeScript type for you to see the response
+
+---
+
+## Next.JS Setup
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -6,12 +37,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
