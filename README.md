@@ -1,5 +1,7 @@
 # Get the weather
 
+> This branch was used to confirm that this project is possible using Axios
+
 This project requires Node (>20.10.0) and NPM to setup and run.
 
 ## Instructions
