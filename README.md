@@ -11,7 +11,7 @@ This project requires Node (>20.10.0) and NPM to setup and run.
 npm i
 ```
 
-3. Copy or rename `.env.example` to `.env` and get the API Key from the instructor working with you
+3. Copy or rename `.env.example` to `.env.local` and get the API Key from the instructor working with you
 4. Starting in `src/pages/index.tsx` and `src/components/weather.tsx` fetch data from the [OpenWeather API](https://openweathermap.org/api) and display the current temperature for the searched latitude and longitude
 5. Time permitting, use the installed `weather-icons-react` to display the current weather pictographically
 
